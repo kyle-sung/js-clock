@@ -1,6 +1,9 @@
 var canvas = $('#clock').get(0);
 var context = canvas.getContext('2d');
 
+setInterval(function() {
+  $('#time').html(new Date());
+}, 1000);
 
 setInterval(function() {
   var date = new Date();
